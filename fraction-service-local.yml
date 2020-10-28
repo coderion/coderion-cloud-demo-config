@@ -16,7 +16,7 @@ management:
 info:
   email: toudidel@gmail.com
 app:
-  description: This is fraction-service v1.0
+  description: v1.0
 fraction-service:
-  minimum: 11
-  maximum: 12
+  minimum: 101
+  maximum: 199

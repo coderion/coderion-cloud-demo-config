@@ -1,5 +1,5 @@
 server:
-  port: ${random.int[8001,8004]}
+  port: 0
 eureka:
   client:
     serviceUrl:

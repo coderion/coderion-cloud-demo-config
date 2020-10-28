@@ -15,3 +15,6 @@ info:
   email: toudidel@gmail.com
 app:
   description: This is fraction-service v1.0
+fraction-service:
+  minimum: 21
+  maximum: 22

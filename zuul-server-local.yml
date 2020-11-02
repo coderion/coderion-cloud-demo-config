@@ -3,40 +3,4 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://discUser:discPassword@localhost:8761/eureka
-spring:
-  cloud:
-    config:
-      username: configUser
-      password: configPassword
-  redis:
-    host: 192.168.10.100
-    port: 6379
-management:
-  security:
-    sessions: always
-
-zuul:
-  routes:
-#    discovery:
-    eureka-server:
-      path: /discovery/**
-      sensitive-headers: Set-Cookie,Authorization
-#      url: http://localhost:8761
-      url: http://localhost:8761/eureka
-    math-service:
-      path: /math-service/**
-      sensitive-headers: Set-Cookie,Authorization
-hystrix:
-  command:
-#    discovery:
-    eureka-server:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 600000
-    math-service:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 600000
+      defaultZone: http://localhost:8761/eureka
